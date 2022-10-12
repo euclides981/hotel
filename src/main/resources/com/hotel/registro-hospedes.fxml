@@ -29,7 +29,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </DatePicker>
-      <ComboBox fx:id="nacaoHospede" layoutX="565.0" layoutY="212.0" prefHeight="35.0" prefWidth="220.0" promptText="Nacionaliade">
+      <ComboBox fx:id="nacaoHospede" layoutX="565.0" layoutY="212.0" prefHeight="35.0" prefWidth="220.0" promptText="Nacionalidade">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
