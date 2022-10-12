@@ -17,7 +17,7 @@ public class ListaHospedes extends Application {
     public void start(Stage stage) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(ListaHospedes.class.getResource("lista-hospedes.fxml")));
         Scene scene = new Scene(root);
-        stage.setTitle("Visualização de Hospedes");
+        stage.setTitle("Visualização de Hospedes.");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
