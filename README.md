@@ -2,6 +2,16 @@
 
 ## Desafio Proposto | Alura - ONE |
 
-### 💾 Tecs Utilizadas  [![Prévia do Projeto](src/main/resources/com/hotel/imagens/readme/sb.png)](https://github.com/euclides981/jogo-da-forca#readme)
+### 💾 Tecs Utilizadas 
 
-## ✉ Contato &nbsp;[![GitHub](https://img.shields.io/badge/-GitHub-ccc?style=flat&logo=github)](https://github.com/euclides981)
+- Java
+- MySQL
+- FXML
+- Scene Buider
+- Intellij IDEA
+
+### Aplicação de um Hotel com Banco de dados com registro de Hospedes e Reservas.
+
+### Veja o video de uma previa do sistema: [Clique Aqui](https://www.youtube.com/watch?v=4FPS4exCxeU&t=21s)
+
+[Meu GitHub](https://github.com/euclides981)
