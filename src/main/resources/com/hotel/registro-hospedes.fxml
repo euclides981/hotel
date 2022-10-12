@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.controller.RegistroHospedesController">
+   <children>
+      <Pane layoutX="808.0" prefHeight="600.0" prefWidth="92.0" style="-fx-background-color: #7986CB;" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/logo-hotel-arrays.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="nomeHospede" layoutX="46.0" layoutY="122.0" prefHeight="35.0" prefWidth="350.0" promptText="Nome" />
+      <TextField fx:id="sobrenomeHospede" layoutX="46.0" layoutY="212.0" prefHeight="35.0" prefWidth="350.0" promptText="Sobrenome" />
+      <TextField fx:id="telefoneHospede" layoutX="46.0" layoutY="302.0" prefHeight="35.0" prefWidth="175.0" promptText="Telefone" />
+      <TextField fx:id="numeroReserva" editable="false" layoutX="46.0" layoutY="392.0" prefHeight="35.0" prefWidth="175.0" promptText="Numero de reserva" />
+      <DatePicker fx:id="dataNascimentoHospede" layoutX="565.0" layoutY="122.0" prefHeight="35.0" prefWidth="220.0" promptText="Data Nascimento">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </DatePicker>
+      <ComboBox fx:id="nacaoHospede" layoutX="565.0" layoutY="212.0" prefHeight="35.0" prefWidth="220.0" promptText="Nacionaliade">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <Button fx:id="btFinalizar" layoutX="648.0" layoutY="392.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="134.0" style="-fx-background-color: transparent;" text="Finalizar">
+         <graphic>
+            <FontAwesomeIconView fill="#177c1e" glyphName="CHECK" size="30" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="48.0" layoutY="93.0" text="Nome">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="183.0" text="Sobrenome">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="272.0" text="Telefone">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="363.0" text="Numero da Reserva">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

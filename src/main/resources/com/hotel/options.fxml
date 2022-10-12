@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.controller.OptionsController">
+   <children>
+      <Pane layoutY="226.0" prefHeight="189.0" prefWidth="900.0" style="-fx-background-color: #7986CB;" />
+      <Button fx:id="btRegistrar" layoutX="135.0" layoutY="177.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="REGISTRAR">
+         <graphic>
+            <FontAwesomeIconView fill="#13654b" glyphName="PENCIL" size="60" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btHospedes" layoutX="366.0" layoutY="177.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text=" VER HOSPEDES">
+         <graphic>
+            <FontAwesomeIconView fill="#4a79bc" glyphName="USERS" size="60" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btReservas" layoutX="633.0" layoutY="177.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text=" VER RESERVAS">
+         <graphic>
+            <FontAwesomeIconView fill="#da7373" glyphName="CALENDAR" size="60" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="76.0" fitWidth="291.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/logo-hotel-arrays.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btLogout" layoutX="802.0" layoutY="7.0" mnemonicParsing="false" text="Logout">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/logout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</Pane>

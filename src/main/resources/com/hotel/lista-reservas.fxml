@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.controller.ListaReservasController">
+   <children>
+      <Pane prefHeight="41.0" prefWidth="900.0" style="-fx-background-color: #7986CB;">
+         <children>
+            <Button fx:id="btOptions" layoutX="800.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="VOLTAR">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagens/volta.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/logo-hotel-arrays.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TableView fx:id="tabReservas" layoutY="140.0" prefHeight="460.0" prefWidth="900.0">
+        <columns>
+          <TableColumn fx:id="tabId" maxWidth="-Infinity" minWidth="44.0" prefWidth="44.0" text="Id" />
+          <TableColumn fx:id="tabEntrada" maxWidth="-Infinity" minWidth="130.0" prefWidth="130.0" text="Data Entrada" />
+            <TableColumn fx:id="tabSaida" maxWidth="-Infinity" minWidth="130.0" prefWidth="130.0" text="Data Saída" />
+            <TableColumn fx:id="tabDias" maxWidth="-Infinity" minWidth="130.0" prefWidth="130.0" text="Total de Dias" />
+            <TableColumn fx:id="tabValor" maxWidth="-Infinity" minWidth="130.0" prefWidth="130.0" text="Valor" />
+            <TableColumn fx:id="tabSuite" maxWidth="-Infinity" minWidth="160.0" prefWidth="160.0" text="Suite" />
+            <TableColumn fx:id="tabPag" maxWidth="-Infinity" minWidth="160.0" prefWidth="160.0" text="Forma de Pag" />
+        </columns>
+      </TableView>
+      <TextField fx:id="editEntrada" layoutX="61.0" layoutY="75.0" />
+      <TextField fx:id="editSaida" layoutX="238.0" layoutY="75.0" />
+      <TextField fx:id="editDias" layoutX="415.0" layoutY="75.0" prefHeight="24.0" prefWidth="50.0" />
+      <TextField fx:id="editValor" layoutX="473.0" layoutY="75.0" prefHeight="24.0" prefWidth="78.0" />
+      <TextField fx:id="editSuite" layoutX="558.0" layoutY="75.0" prefHeight="24.0" prefWidth="160.0" />
+      <TextField fx:id="editFormPag" layoutX="725.0" layoutY="75.0" prefHeight="24.0" prefWidth="160.0" />
+      <TextField fx:id="campoPesquisa" layoutX="12.0" layoutY="106.0" onMouseClicked="#pesquisa" prefHeight="24.0" prefWidth="707.0" promptText="Search" />
+      <Label layoutX="62.0" layoutY="55.0" text="Data de Entrada" />
+      <Label layoutX="239.0" layoutY="55.0" text="Data de Saída" />
+      <Label layoutX="416.0" layoutY="55.0" text="Dias" />
+      <Label layoutX="474.0" layoutY="55.0" text="Valor" />
+      <Label layoutX="558.0" layoutY="55.0" text="Suite" />
+      <Label layoutX="725.0" layoutY="55.0" text="Forma de Pagamento" />
+      <Button fx:id="btEditar" layoutX="727.0" layoutY="106.0" mnemonicParsing="false" prefWidth="70.0" style="-fx-background-color: #4CAF50;" text="EDITAR" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></Button>
+      <Button fx:id="btDeletar" layoutX="815.0" layoutY="106.0" mnemonicParsing="false" prefWidth="70.0" style="-fx-background-color: #F44336;" text="DELETAR" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></Button>
+      <Label layoutX="13.0" layoutY="55.0" text="Id" />
+      <Label fx:id="labIdReserva" alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="75.0" prefHeight="24.0" prefWidth="35.0" style="-fx-border-color: #ccc; -fx-background-color: #fff; -fx-border-radius: 2px;" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.controller.ListaHospedesController">
+   <children>
+      <Pane prefHeight="41.0" prefWidth="900.0" style="-fx-background-color: #7986CB;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/logo-hotel-arrays.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labId" alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="75.0" prefHeight="24.0" prefWidth="35.0" style="-fx-border-color: #ccc; -fx-background-color: #fff; -fx-border-radius: 2px;" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <TableView fx:id="tabelaMostraHospedes" layoutY="140.0" prefHeight="460.0" prefWidth="900.0">
+         <columns>
+            <TableColumn fx:id="idColTabHospedes" maxWidth="-Infinity" minWidth="49.0" prefWidth="49.0" text="ID" />
+            <TableColumn fx:id="nomeColTabHospedes" maxWidth="-Infinity" minWidth="170.0" prefWidth="170.0" text="Nome" />
+            <TableColumn fx:id="sobrenomeColTabHospedesaida" maxWidth="-Infinity" minWidth="190.0" prefWidth="190.0" text="Sobrenome" />
+            <TableColumn fx:id="nascimentoColTabHospedes" maxWidth="-Infinity" minWidth="110.0" prefWidth="110.0" text="Nascimento" />
+            <TableColumn fx:id="nacionalidadeColTabHospedes" maxWidth="-Infinity" minWidth="140.0" prefWidth="140.0" text="Nacionalidade" />
+            <TableColumn fx:id="telefoneColTabHospedes" maxWidth="-Infinity" minWidth="140.0" prefWidth="140.0" text="Telefone" />
+            <TableColumn fx:id="idReserva" maxWidth="-Infinity" minWidth="85.0" prefWidth="85.0" text="Reserva" />
+         </columns>
+      </TableView>
+      <TextField fx:id="editNome" layoutX="53.0" layoutY="75.0" prefHeight="24.0" prefWidth="173.0" />
+      <TextField fx:id="editSobrenome" layoutX="231.0" layoutY="75.0" prefHeight="24.0" prefWidth="185.0" />
+      <TextField fx:id="editNascimento" layoutX="421.0" layoutY="75.0" prefHeight="24.0" prefWidth="128.0" />
+      <TextField fx:id="edidNacao" layoutX="554.0" layoutY="75.0" prefHeight="24.0" prefWidth="177.0" />
+      <TextField fx:id="editTelefone" layoutX="736.0" layoutY="75.0" prefHeight="24.0" prefWidth="148.0" />
+      <TextField fx:id="campoPesquisa" layoutX="14.0" layoutY="106.0" onMouseClicked="#pesquisa" prefHeight="24.0" prefWidth="717.0" promptText="Search" />
+      <Button fx:id="btEditar" layoutX="736.0" layoutY="106.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="70.0" style="-fx-background-color: #4CAF50;" text="EDITAR" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></Button>
+      <Button fx:id="btDel" layoutX="815.0" layoutY="106.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="70.0" style="-fx-background-color: #F44336;" text="DELETAR" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></Button>
+      <Label layoutX="53.0" layoutY="55.0" text="Nome" />
+      <Label layoutX="203.0" layoutY="55.0" text="Sobrenoome" />
+      <Label layoutX="421.0" layoutY="55.0" text="Nascimento" />
+      <Label layoutX="554.0" layoutY="55.0" text="Nacionalidade" />
+      <Label layoutX="736.0" layoutY="55.0" text="Telefone" />
+      <Label layoutX="13.0" layoutY="55.0" text="Id" />
+      <Button fx:id="btOptions" layoutX="800.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="VOLTAR">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/volta.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</Pane>
