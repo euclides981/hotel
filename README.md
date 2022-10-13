@@ -24,6 +24,6 @@
 
 [![Prévia do Projeto](https://github.com/euclides981/euclides981/blob/main/img/6-lista-reserva.jpg)](https://github.com/euclides981/hotel#readme)
 
-### Veja o video de uma previa do sistema: [Clique Aqui](https://www.youtube.com/watch?v=4FPS4exCxeU&t=21s)
+### Veja o video de uma previa do sistema: [Clique Aqui](https://www.youtube.com/watch?v=TiQh2e7aaWw)
 
 [Meu GitHub](https://github.com/euclides981)
