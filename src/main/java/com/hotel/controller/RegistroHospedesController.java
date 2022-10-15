@@ -43,7 +43,7 @@ public class RegistroHospedesController {
     }
     public void registraHospede(){
 
-        String nascimento = String.valueOf(dataNascimentoHospede.getValue()),
+        String nascimento = dataNascimentoHospede.getValue().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")),
                 nome = nomeHospede.getText(),
                 sobrenome = sobrenomeHospede.getText(),
                 nacionalidade = nacaoHospede.getValue(),

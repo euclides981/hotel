@@ -123,8 +123,8 @@ public class RegistroReservasController {
     }
 
     private void cadastraReserva(){
-        String entrada = dataEntrada.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
-        String saida = dataSaida.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        String entrada = dataEntrada.getValue().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+        String saida = dataSaida.getValue().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 
         Reservas r = new Reservas(entrada, saida, dias, valorTotal, suite, formPag);
 

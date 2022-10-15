@@ -10,8 +10,9 @@ public class ConnectaDb {
     public Connection getDBConnection(){
 
         try {
-            String url = "jdbc:sqlite:out/artifacts/hotel_jar/db/db_hotel.db";
 
+            String url = "jdbc:sqlite:db/db_hotel.db";
+            //String url = "jdbc:sqlite:out/artifacts/hotel_jar/Hotel Arrays/db/db_hotel.db";
             this.databaseLink = DriverManager.getConnection(url);
 
         } catch (SQLException e) {
