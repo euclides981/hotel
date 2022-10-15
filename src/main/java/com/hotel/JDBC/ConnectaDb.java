@@ -10,7 +10,7 @@ public class ConnectaDb {
     public Connection getDBConnection(){
         String databaseName = "db_hotel";
         String databaseUser = "admin";
-        String databasePass = "8@Th6$Ui";
+        String databasePass = "JuH5$/!@";
         String url = "jdbc:mysql://localhost/" + databaseName;
 
         try {
