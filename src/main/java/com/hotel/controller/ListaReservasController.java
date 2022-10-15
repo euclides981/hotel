@@ -81,18 +81,10 @@ public class ListaReservasController implements Initializable {
         tabReservas.setItems(atualizaTabela());
     }
     public void editaReserva(){
-        String ent = editEntrada.getText();
-        String sai = editSaida.getText();
-
-        DateTimeFormatter parser = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        LocalDate dataEnt = LocalDate.parse(ent, parser);
-        LocalDate dataSai = LocalDate.parse(sai, parser);
-
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-        String entrada = formatter.format(dataEnt);
-        String saida = formatter.format(dataSai);
 
         int id = Integer.parseInt(labIdReserva.getText());
+        String entrada = editEntrada.getText();
+        String saida = editSaida.getText();
         int  dias = Integer.parseInt(editDias.getText());
         int  valorTotal = Integer.parseInt(editValor.getText());
         String  suite = editSuite.getText();

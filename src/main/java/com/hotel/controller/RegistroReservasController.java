@@ -84,18 +84,12 @@ public class RegistroReservasController {
         }
         formaDePag();
 
-        entrada = dataEntrada.getValue().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
-        saida = dataSaida.getValue().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
-        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
-        Date date1 = null;
-        Date date2 = null;
+        entrada = String.valueOf(dataEntrada.getValue());
+        saida = String.valueOf(dataSaida.getValue());
 
         try {
-            date1 = format.parse(entrada);
-            date2 = format.parse(saida);
-
-            DateTime dt1 = new DateTime(date1);
-            DateTime dt2 = new DateTime(date2);
+            DateTime dt1 = new DateTime(entrada);
+            DateTime dt2 = new DateTime(saida);
 
             dias = Days.daysBetween(dt1, dt2).getDays();
             if (dias <= 0) {

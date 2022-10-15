@@ -188,17 +188,12 @@ public class ListaHospedesController implements Initializable {
     }
     public void editaHospede(){
 
-        String dn = editNascimento.getText();
 
-        DateTimeFormatter parser = DateTimeFormatter.ofPattern("dd/MM/uuuu");
-        LocalDate dataNasc = LocalDate.parse(dn, parser);
-
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-        String nascimento = formatter.format(dataNasc);
 
         int id = Integer.parseInt(labId.getText());
         String nome = editNome.getText();
         String  sobrenome = editSobrenome.getText();
+        String nascimento = editNascimento.getText();
         String  nacionalidade = edidNacao.getText();
         String  telefone = editTelefone.getText();
 

@@ -53,11 +53,6 @@ public class ReservasDAO {
         String sql = "select * from Reservas;";
 
         try {
-            DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
-            df.setLenient(false);
-            String dataE;
-            String dataS;
-
             PreparedStatement stmt = conn.prepareStatement(sql);
             ResultSet res = stmt.executeQuery();
 
@@ -65,10 +60,8 @@ public class ReservasDAO {
 
                 Reservas r = new Reservas();
                 r.setId(res.getInt("id_reserva"));
-                dataE = df.format(res.getDate("data_entrada"));
-                r.setEntrada(dataE);
-                dataS = df.format(res.getDate("data_saida"));
-                r.setSaida(dataS);
+                r.setEntrada(res.getString("data_entrada"));
+                r.setSaida(res.getString("data_saida"));
                 r.setDias(res.getInt("qtd_dias"));
                 r.setValorTotal(res.getInt("valor"));
                 r.setSuite(res.getString("suite"));

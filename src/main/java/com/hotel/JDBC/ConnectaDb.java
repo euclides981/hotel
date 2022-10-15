@@ -8,19 +8,16 @@ public class ConnectaDb {
     public Connection databaseLink;
 
     public Connection getDBConnection(){
-        String databaseName = "db_hotel";
-        String databaseUser = "admin";
-        String databasePass = "JuH5$/!@";
-        String url = "jdbc:mysql://localhost/" + databaseName;
 
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            databaseLink = DriverManager.getConnection(url, databaseUser, databasePass);
-        } catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
+            String url = "jdbc:sqlite:out/artifacts/hotel_jar/db/db_hotel.db";
+
+            this.databaseLink = DriverManager.getConnection(url);
+
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
+
         return databaseLink;
     }
 }

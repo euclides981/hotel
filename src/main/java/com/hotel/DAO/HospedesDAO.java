@@ -49,11 +49,6 @@ public class HospedesDAO {
         String sql = "select * from Hospedes;";
 
         try {
-
-            DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
-            df.setLenient(false);
-            String dataF;
-
             PreparedStatement stmt = conn.prepareStatement(sql);
             ResultSet res = stmt.executeQuery();
 
@@ -62,8 +57,7 @@ public class HospedesDAO {
                 h.setId(res.getInt("idHospede"));
                 h.setNome(res.getString("Nome"));
                 h.setSobrenome(res.getString("Sobrenome"));
-                dataF = df.format(res.getDate("Nascimento"));
-                h.setDataNascimento(dataF);
+               h.setDataNascimento(res.getString("Nascimento"));
                 h.setNacionalidade(res.getString("Nacionalidade"));
                 h.setTelefone(res.getString("Telefone"));
                 h.setIdReserva(res.getInt("idReserva"));
