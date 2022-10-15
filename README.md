@@ -4,11 +4,11 @@
 
 ### 💾 Tecs Utilizadas 
 
-- Java
-- MySQL
-- FXML
-- Scene Buider
-- Intellij IDEA
+- Java.
+- MySQL.
+- FXML.
+- Scene Buider.
+- Intellij IDEA.
 
 ### Aplicação de um Hotel com Banco de dados com registro de Hospedes e Reservas.
 
