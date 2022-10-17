@@ -1,9 +1,7 @@
 package com.hotel.DAO;
 
 import com.hotel.JDBC.ConnectaDb;
-
 import com.hotel.model.LoginModel;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

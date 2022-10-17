@@ -6,11 +6,13 @@
 
 - Java.
 - MySQL.
+- SQLite
 - FXML.
 - Scene Buider.
 - Intellij IDEA.
 
 ### Aplicação de um Hotel com Banco de dados com registro de Hospedes e Reservas.
+
 
 https://user-images.githubusercontent.com/90155763/195993164-0d7dc4b1-ac7d-4b56-8490-d9ce899273b5.mp4
 

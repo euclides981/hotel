@@ -1,23 +1,16 @@
 package com.hotel.controller;
 
 import com.hotel.DAO.ReservasDAO;
-import com.hotel.RegistroHospedes;
 import com.hotel.RegistroReservas;
 import com.hotel.model.Reservas;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.ToggleGroup;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import org.joda.time.DateTime;
 import org.joda.time.Days;
 
 import java.sql.SQLException;
-import java.text.SimpleDateFormat;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 
 public class RegistroReservasController {
     @FXML    private DatePicker dataEntrada;

@@ -1,16 +1,11 @@
 package com.hotel.DAO;
 
 import com.hotel.JDBC.ConnectaDb;
-import com.hotel.model.Hospedes;
 import com.hotel.model.Reservas;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
